@@ -1,3 +1,6 @@
+package day01
+
+import readInput
 import java.lang.Integer.max
 
 fun main() {
