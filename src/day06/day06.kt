@@ -1,14 +1,6 @@
 package day06
 
 import readInput
-import java.awt.SystemColor.window
-
-data class Instruction(
-    val moveCount: Int,
-    val fromStackIndex: Int,
-    val toStackIndex: Int
-)
-
 fun main() {
 
     fun findDistinctCharactersIndex(s: String, size: Int, step: Int = 1): Int {
