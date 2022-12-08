@@ -43,38 +43,3 @@ fun main() {
     println(part2(input))
 
 }
-
-
-/**
- * Example
- *     val files1 = listOf(
- *         MyFile("a1", 1),
- *         MyFile("b1", 1),
- *         MyFile("c1", 1)
- *     )
- *     val directory1 = MyDirectory("Testing1", files = files1)
- *
- *     val files2 = listOf(
- *         MyFile("a2", 4),
- *         MyFile("b2", 4),
- *         MyFile("c2", 4)
- *     )
- *     val directory2 = MyDirectory("Testing2", files = files2)
- *
- *     val files = listOf(
- *         MyFile("a", 2),
- *         MyFile("b", 2),
- *         MyFile("c", 2)
- *     )
- *     val directory = MyDirectory("Testing2", directories = listOf(directory1, directory2), files = files)
- *     println(directory)
- *     println(directory.calculateSize())
- */
-
-// 70000000 - 48381165
-// 21,618,835
-// 30,000,000
-
-
-// 1844187
-// 4978279
