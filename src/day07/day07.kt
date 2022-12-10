@@ -1,7 +1,8 @@
 package day07
 
+import assertEquals
 import readInput
-import java.util.UUID
+import readTestInput
 import kotlin.math.min
 
 fun main() {
@@ -34,11 +35,11 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("day07/Day07_test")
-    check(part1(testInput) == 95437)
-    check(part2(testInput) == 24933642)
+    val testInput = readTestInput()
+    assertEquals(part1(testInput), 95437)
+    assertEquals(part2(testInput), 24933642)
 
-    val input = readInput("day07/Day07")
+    val input = readInput()
     println(part1(input))
     println(part2(input))
 

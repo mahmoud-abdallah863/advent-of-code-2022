@@ -1,6 +1,9 @@
 package day06
 
+import assertEquals
 import readInput
+import readTestInput
+
 fun main() {
 
     fun findDistinctCharactersIndex(s: String, size: Int, step: Int = 1): Int {
@@ -29,11 +32,11 @@ fun main() {
 
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("day06/Day06_test")
-    check(part1(testInput) == 5)
-    check(part2(testInput) == 23)
+    val testInput = readTestInput()
+    assertEquals(part1(testInput), 5)
+    assertEquals(part2(testInput), 23)
 
-    val input = readInput("day06/Day06")
+    val input = readInput()
     println(part1(input))
     println(part2(input))
 

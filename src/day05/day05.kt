@@ -1,6 +1,8 @@
 package day05
 
+import assertEquals
 import readInput
+import readTestInput
 
 data class Instruction(
     val moveCount: Int,
@@ -88,11 +90,11 @@ fun main() {
 
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("day05/Day05_test")
-    check(part1(testInput) == "CMZ")
-    check(part2(testInput) == "MCD")
+    val testInput = readTestInput()
+    assertEquals(part1(testInput), "CMZ")
+    assertEquals(part2(testInput), "MCD")
 
-    val input = readInput("day05/Day05")
+    val input = readInput()
     println(part1(input))
     println(part2(input))
 }

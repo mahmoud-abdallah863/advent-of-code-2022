@@ -1,6 +1,8 @@
 package day01
 
+import assertEquals
 import readInput
+import readTestInput
 import java.lang.Integer.max
 
 fun main() {
@@ -36,11 +38,11 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test")
-    check(part1(testInput) == 24000)
-    check(part2(testInput) == 45000)
+    val testInput = readTestInput()
+    assertEquals(part1(testInput), 24000)
+    assertEquals(part2(testInput), 45000)
 
-    val input = readInput("Day01")
+    val input = readInput()
     println(part1(input))
     println(part2(input))
 }

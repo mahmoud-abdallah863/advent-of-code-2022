@@ -1,6 +1,8 @@
 package day02
 
+import assertEquals
 import readInput
+import readTestInput
 
 enum class RoundResult(val score: Int) {
     Win(6),
@@ -71,11 +73,11 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("day02/Day02_test")
-    check(part1(testInput) == 15)
-    check(part2(testInput) == 12)
+    val testInput = readTestInput()
+    assertEquals(part1(testInput), 15)
+    assertEquals(part2(testInput), 12)
 
-    val input = readInput("day02/Day02")
+    val input = readInput()
     println(part1(input))
     println(part2(input))
 }

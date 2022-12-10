@@ -1,6 +1,8 @@
 package day04
 
+import assertEquals
 import readInput
+import readTestInput
 
 fun main() {
 
@@ -27,11 +29,11 @@ fun main() {
 
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("day04/Day04_test")
-    check(part1(testInput) == 2)
-    check(part2(testInput) == 4)
+    val testInput = readTestInput()
+    assertEquals(part1(testInput), 2)
+    assertEquals(part2(testInput), 4)
 
-    val input = readInput("day04/Day04")
+    val input = readInput()
     println(part1(input))
     println(part2(input))
 }
